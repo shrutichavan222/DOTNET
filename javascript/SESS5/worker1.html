@@ -1,0 +1,23 @@
+var i = 0;
+var timer = undefined;
+var x = 1;
+
+function addToI(){
+    i = i + 1;
+    postMessage(i); //send an update from the Web Worker
+    x++;
+    if(x == 10)
+    {
+        stop();
+    }
+    else{
+        timer = setTimeout(addToI(),500); //execute once in 500ms
+    }    
+}
+
+addToI();
+
+function stop()
+{
+    clearTimeout(timer); //Stop the timer from running the function again
+}

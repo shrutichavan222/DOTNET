@@ -1,0 +1,17 @@
+.leftDiv{
+    padding-bottom: 2em;
+    width: 40%;
+    display: inline-block;
+    background-color: antiquewhite;
+    color: blue;
+    border: 0.2em dashed blueviolet;
+}
+
+.rightDiv{
+    padding-bottom: 2em;
+    width: 58%;
+    display: inline-block;
+    background-color: azure;
+    color:brown;
+    border: 0.3em dotted chocolate;
+}

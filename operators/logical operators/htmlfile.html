@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Logical Operators</title>
+    <link rel="stylesheet" href="cssfile.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1 id="name">Logical Operators</h1>
+            
+<div id="div-table">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Logical AND</th>
+        <th scope="col">Logical OR</th>
+        <th scope="col">Logical NOT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalAND1();">true & true</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalOR1();">true & true</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalNOT1();">true</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalAND2();">true & false</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalOR2();">true & false</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalNOT2();">false</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalAND3();">false & true</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalOR3();">false & true</button>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalAND4();">false & false</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-info" onclick="logicalOR4();">false & false</button>
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <script src="javascriptfile.js"></script>
+  </body>
+</html>

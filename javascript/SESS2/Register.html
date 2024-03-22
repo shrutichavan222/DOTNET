@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>SESS2 - REGISTRATION</title>
+    </head>
+    <body>
+<h2>Please fill in the details</h2>
+<form method=""post" action="https://www.mastek.com/submitdata">
+<p>
+    <label>Name<span>*</span></label>
+    <input type="text" name="name" placeholder="Your name here" required/>
+</p>
+<p>
+    <label>Age</label>
+    <input type="range" name="age" min="0" max="120/">
+    <input type="number" name="age" min="0" max="120/">
+</p>
+<p>
+    <label>Gender</label>
+    <select name="gender">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+    </select>
+</p>
+<p>
+    <label>DOB</label>
+    <input type="date" name="dob"/>
+</p>
+<p>
+    <label>Country</label>
+    <input type="text" name="country" placeholder="where are you from" required/>
+</p>
+<p>
+    <label>How much do you like web development?</label>
+    <input type="text" pattern="^(100(?:| 0*?\.\d{1,2} |  \d{1,2}(?:\.\d{1,2})? )
+    name="percent"/>
+</p>
+<p>
+    <fieldset>
+        <legend>HOBBIES</legend>
+        <label>what do you like?</label>
+        <input type="checkbox" name="cricket">cricket</input>
+        <input type="checkbox" name="movies">movies</input>
+        <input type="checkbox" name="technology">technology</input>
+        <input type="checkbox" name="music">music</input>
+    </fieldset>
+</p>
+<p>
+    <fieldset>
+        <legend>MARITAL STATUS</legend>
+        <label>what is your marital status?</label>
+        <input type="radio" name="maritalstatus">Marrried</input>
+        <input type="radio" name="maritalstatus">Unmarried</input>
+        <input type="radio" name="maritalstatus">Divorced</input>
+        <input type="radio" name="maritalstatus">separated</input>
+    </fieldset>
+</p>
+<p>
+<label>email</label>
+<input type="email" name="email"/></form></body><br>
+<label>Address</label></html><br/>
+<textarea name="address" rows="15" cols="37"></textarea>
+</p>
+<p>
+    <input type="reset" value="reset">
+    <input type="submit" value="submit form">
+</p>
+</form>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+!doctype html>
+<html>
+    <head>
+        <title>SESS3</title>
+        <style>
+            meter{
+                background-color: beige;
+                color: red;
+                border-radius: 0.2em;
+            }
+        </style>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            Temperature   
+            <meter min="12" low="20" high = "39" max="55" value="54">
+            </meter>
+    
+            <hr/>
+            Progress <progress value="90" max="100">90%
+            </progress>
+        </div>
+        
+        Select Color<input type="color" id="color"/>
+
+        <button type="button" onclick="setColor()">Set Color</button>
+    </body>
+</html>

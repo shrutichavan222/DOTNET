@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sess6</title>
+    </head>
+    <body>
+        <p>
+            <label for="x">X</label>
+            <input type="text" id="x">
+            
+        </p>
+        <p>
+            <label for="y">Y</label>
+            <input type="text" id="y">
+        </p>
+        <p>
+            <button type="button" onclick="Multiply()">Multiply</button>
+            <input type="button" onclick="Divide()" value="Divide"/>
+        </p>
+        <p id="resultPara">
+            Result <span id="result"></span>
+        </p>
+        <script>
+            var x,y;
+
+            function ToggleVisibility(visibility){
+                document.getElementById("resultPara").style.visibility = visibility;
+            }
+
+            function Input(){
+                x=parseInt(document.getElementById("x").value);
+                y=parseInt(document.getElementById("y").value);
+            }
+
+            function Multiply(){
+                Input();
+                document.getElementById("result").innerHTML=x*y;
+                ToggleVisibility("visible");
+            }
+
+            function Divide(){
+                Input();
+                document.getElementById("result").innerHTML=x/y;
+                ToggleVisibility("visible");
+            }
+        </script>
+    </body>
+</html>
